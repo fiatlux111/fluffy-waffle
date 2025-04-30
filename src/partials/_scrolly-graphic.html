@@ -11,15 +11,15 @@
          
          <img decoding="async" class="asset" src="./assets/CR-Rodinia.jpg">
          
-         <img decoding="async" class="asset" src="./assets/CR-lava-floods-bg.jpg">
+         <img decoding="async" class="featured" src="./assets/CR-lava-floods-bg.jpg">
          
-         <img decoding="async" class="asset" src="./assets/CR-geology-05.png">
+         <img decoding="async" class="featured" src="./assets/CR-lava-floods-bg.jpg">
          
-         <img decoding="async" class="asset" src="./assets/CR-Ice-Age-Floods-bg.jpg">
+         <img decoding="async" class="featured" src="./assets/CR-Ice-Age-Floods-bg.jpg">
 
-         <img decoding="async" class="asset" src="./assets/CR-geology-07.png">
+         <img decoding="async" class="featured" src="./assets/CR-Ice-Age-Floods-bg.jpg">
 
-         <img decoding="async" class="asset" src="./assets/CR-geology-15.png">
+         <img decoding="async" class="featured" src="./assets/CR-geology-15.png">
          
        </div>
        <article id="scroller">
@@ -29,11 +29,11 @@
          </div>
          <div class="step" data-step="2">
           
-          <p><strong>From 17 to 6 million years ago, </strong>lava oozed from long fissures in the earth’s crust, flooding the Columbia Basin. The basalt layers were so heavy they caused the land to sink.</p>
+          <p><img width = 100%; src="./assets/CR-geology-storyboard-04-01.png"><br><strong>From 17 to 6 million years ago, </strong>lava oozed from long fissures in the earth’s crust, flooding the Columbia Basin. The basalt layers were so heavy they caused the land to sink.</p>
          </div>
          <div class="step" data-step="3">
           
-          <p><strong>From 10 million to 1 million years ago, </strong>a powerful, wild Columbia — in some places a mile wide and 500 feet deep — transported snowmelt from the Columbia and Rocky mountains to the Pacific. Lava flows pushed the river from its path, but it always found a way around, carving channels and dropping waterfalls over basalt.</p>
+          <p><img width = 100%; src="./assets/CR-geology-05.png"><br><strong>From 10 million to 1 million years ago, </strong>a powerful, wild Columbia — in some places a mile wide and 500 feet deep — transported snowmelt from the Columbia and Rocky mountains to the Pacific. Lava flows pushed the river from its path, but it always found a way around, carving channels and dropping waterfalls over basalt.</p>
          </div>
          <div class="step" data-step="4">
           
@@ -41,7 +41,7 @@
          </div>
          <div class="step" data-step="5">
           
-          <p><strong>The water would back up behind narrow basalt channels, </strong>like at Wallula Gap. Water rose as much as 1,250 feet above sea level, creating Lake Lewis. It filled the Pasco Basin and is estimated to have covered 4,500 square miles and reached a depth of 900 feet. The entire Tri-City area was underwater in what would have resembled a frothy chocolate milkshake, complete with floating icebergs.</p>
+          <p><p><img width = 100%; src="./assets/CR-geology-07.png"><br><strong>The water would back up behind narrow basalt channels, </strong>like at Wallula Gap. Water rose as much as 1,250 feet above sea level, creating Lake Lewis. It filled the Pasco Basin and is estimated to have covered 4,500 square miles and reached a depth of 900 feet. The entire Tri-City area was underwater in what would have resembled a frothy chocolate milkshake, complete with floating icebergs.</p>
          </div>
          <div class="step" data-step="6">
           
@@ -82,7 +82,7 @@
        main {
          position: relative;
          padding: 0 0rem;
-         margin-top:40px;
+         margin-top:0px;
          max-width: 100%;
        }
   
@@ -90,7 +90,7 @@
          position: -webkit-sticky;
          position: sticky;
          height: 80vh;
-         width: 50%;
+         width: 100%;
          /* margin: 0 0 50% 40%; */
          z-index:-1;
          top: 5%;
@@ -121,10 +121,10 @@
   
        .step {
          position: relative;
-         margin-left:50%;
+         margin-left:62%;
          background-color: white;
          color: black;
-         width:40%;
+         width:35%;
        }
   
        @media (max-width:768px) {
@@ -145,7 +145,7 @@
   
        .step p {
          text-align: left;
-         padding: 2rem;
+         padding: 1rem;
          font-size: 19px;
          margin-bottom:800px;
          
@@ -165,6 +165,16 @@
        }
     
        .asset {
+         position:absolute;
+         top:0;
+         left:0;
+         width:60%;
+         opacity:0;
+         animation: fadeOut 0.5s ease-in;
+         
+       }
+
+       .featured {
          position:absolute;
          top:0;
          left:0;
